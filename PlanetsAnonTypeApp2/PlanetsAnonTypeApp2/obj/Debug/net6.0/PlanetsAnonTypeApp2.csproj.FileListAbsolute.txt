@@ -1,0 +1,15 @@
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\bin\Debug\net6.0\PlanetsAnonTypeApp2.exe
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\bin\Debug\net6.0\PlanetsAnonTypeApp2.deps.json
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\bin\Debug\net6.0\PlanetsAnonTypeApp2.runtimeconfig.json
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\bin\Debug\net6.0\PlanetsAnonTypeApp2.dll
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\bin\Debug\net6.0\PlanetsAnonTypeApp2.pdb
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\PlanetsAnonTypeApp2.csproj.AssemblyReference.cache
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\PlanetsAnonTypeApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\PlanetsAnonTypeApp2.AssemblyInfoInputs.cache
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\PlanetsAnonTypeApp2.AssemblyInfo.cs
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\PlanetsAnonTypeApp2.csproj.CoreCompileInputs.cache
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\PlanetsAnonTypeApp2.dll
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\refint\PlanetsAnonTypeApp2.dll
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\PlanetsAnonTypeApp2.pdb
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\PlanetsAnonTypeApp2.genruntimeconfig.cache
+C:\Users\koval\Desktop\Projekts\PlanetsAnonTypeApp1\PlanetsAnonTypeApp2\PlanetsAnonTypeApp2\obj\Debug\net6.0\ref\PlanetsAnonTypeApp2.dll
