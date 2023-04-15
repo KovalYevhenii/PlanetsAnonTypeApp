@@ -10,7 +10,7 @@ namespace PlanetsAnonTypeApp3
         {
             CatalogOfPlanets catalog = new();
 
-            catalog.GetPlanet("Mars", planetName =>
+            catalog.GetPlanet("Mars", countValidation =>
             {
                 if (catalog.Counter > 3)
                 {
@@ -22,7 +22,7 @@ namespace PlanetsAnonTypeApp3
                 }
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("the Earth", planetName =>
+            catalog.GetPlanet("the Earth", countValidation =>
             {
                 if (catalog.Counter > 3)
                 {
@@ -34,7 +34,7 @@ namespace PlanetsAnonTypeApp3
                 }
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("Venus", planetName =>
+            catalog.GetPlanet("Venus", countValidation =>
             {
                 if (catalog.Counter > 3)
                 {
@@ -46,7 +46,7 @@ namespace PlanetsAnonTypeApp3
                 }
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("mars", planetName =>
+            catalog.GetPlanet("mars", countValidation =>
             {
                 if (catalog.Counter > 3)
                 {
