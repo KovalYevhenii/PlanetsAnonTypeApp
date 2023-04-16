@@ -9,9 +9,13 @@ namespace PlanetsAnonTypeApp3
         static void Main(string[] args)
         {
             CatalogOfPlanets catalog = new();
-
-            catalog.GetPlanet("Mars", countValidation =>
+      
+            catalog.GetPlanet("Mars", planetName =>
             {
+                if (planetName.ToLower() == "Limonia")
+                {
+                    return "Vorbidden planet";
+                }
                 if (catalog.Counter > 3)
                 {
                     return "Error";
@@ -22,8 +26,12 @@ namespace PlanetsAnonTypeApp3
                 }
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("the Earth", countValidation =>
+            catalog.GetPlanet("Limonia", planetName =>
             {
+                if (planetName == "Limonia")
+                {
+                    return "Vorbidden planet";
+                }
                 if (catalog.Counter > 3)
                 {
                     return "Error";
@@ -34,8 +42,12 @@ namespace PlanetsAnonTypeApp3
                 }
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("Venus", countValidation =>
+            catalog.GetPlanet("the Earth", planetName =>
             {
+                if (planetName == "Limonia")
+                {
+                    return "Vorbidden planet";
+                }
                 if (catalog.Counter > 3)
                 {
                     return "Error";
@@ -46,23 +58,22 @@ namespace PlanetsAnonTypeApp3
                 }
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("mars", countValidation =>
+            catalog.GetPlanet("mars", planetName =>
             {
+                if (planetName.ToLower() == "Limonia")
+                {
+                    return "Vorbidden planet";
+
+                }
                 if (catalog.Counter > 3)
                 {
-                    return "Error";   
+                    return "Error";
                 }
                 else
                 {
                     return null;
                 }
             });
-
-
-
-
-
-
         }
 
     }

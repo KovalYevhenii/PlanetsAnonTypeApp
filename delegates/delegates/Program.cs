@@ -6,7 +6,7 @@
         static void Main(string[] args)
         {
             PopulateCartWithDemoData();
-            Console.WriteLine($"The total for the cart is {cart.GenarateTotal(SubTotalAlert, CalcukateLeveledDiscount, AlertUser)}");
+            cart.GenarateTotal(SubTotalAlert, CalcukateLeveledDiscount, AlertUser);
             Console.WriteLine();
 
             decimal total = cart.GenarateTotal((subTotal) => Console.WriteLine($"The subtotal for cart 2 is {subTotal}"),
