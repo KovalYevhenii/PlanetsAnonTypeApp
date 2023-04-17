@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace PlanetsAnonTypeApp3
 {
     public class Planet
@@ -11,12 +6,13 @@ namespace PlanetsAnonTypeApp3
         public string Name { get; set; }
         public int OrderNumber { get; set; }
         public double EquatorLength { get; set; }
-
-        public Planet(string name, int orderNumber, double equatorLength)
+        public Planet? PreviousPlanet { get; set; }
+        public Planet(string name, int orderNumber, double equatorLength, Planet? previousPlanet = null)
         {
             Name = name;
             OrderNumber = orderNumber;
             EquatorLength = equatorLength;
+           PreviousPlanet = previousPlanet;
         }
     }
 }

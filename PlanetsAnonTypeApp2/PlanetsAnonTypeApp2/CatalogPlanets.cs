@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace PlanetsAnonTypeApp2
 {
     public class CatalogOfPlanets
@@ -17,18 +11,19 @@ namespace PlanetsAnonTypeApp2
             Planets  = new List<Planet>
             {
                 new Planet ("Venus",2, 380.25),
-                new Planet ("The Earth", 3, 40.075),
-                new Planet ("Mars", 4, 21.3444)
+                new Planet ("The Earth", 3, 40.075,new Planet("Venus",2, 380.25)),
+                new Planet ("Mars", 4, 21.3444,new Planet("The Earth", 3, 40.075))
             };
-            _getPlanetCount = 0;
         }
         public void GetPlanet(string planetName)
         {
+            ++_getPlanetCount;
           var planet = Planets.FirstOrDefault(p => p.Name.Equals(planetName, StringComparison.OrdinalIgnoreCase));
 
-            if(_getPlanetCount>= 3)
+            if(_getPlanetCount % 3 == 0)
             {
-                Console.WriteLine("You have reached the maximum number of calls to the GetPlanet method.");
+                Console.WriteLine("You are trying too often.");
+                _getPlanetCount = 0;
                 return;
             }
             if(planet != null)
@@ -40,7 +35,6 @@ namespace PlanetsAnonTypeApp2
             {
                 Console.WriteLine($"Planet {planetName} not found");
             }
-            _getPlanetCount++;
             
         }
     }

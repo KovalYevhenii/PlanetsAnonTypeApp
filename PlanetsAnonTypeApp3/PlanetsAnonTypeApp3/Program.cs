@@ -1,7 +1,4 @@
 ﻿
-using System;
-using System.Net.WebSockets;
-
 namespace PlanetsAnonTypeApp3
 {
     internal class Program
@@ -10,71 +7,49 @@ namespace PlanetsAnonTypeApp3
         {
             CatalogOfPlanets catalog = new();
       
-            catalog.GetPlanet("Mars", planetName =>
+            catalog.GetPlanet("Mars", (planetName,counter) =>
             {
-                if (planetName.ToLower() == "Limonia")
+                if (planetName.Equals("Limonia"))
                 {
-                    return "Vorbidden planet";
+                    return "forbidden planet";
                 }
-                if (catalog.Counter > 3)
-                {
+                if (counter % 3 == 0)
                     return "Error";
-                }
-                else
-                {
                     return null;
-                }
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("Limonia", planetName =>
+            catalog.GetPlanet("Limonia", (planetName, counter) =>
             {
-                if (planetName == "Limonia")
+                if (planetName.Equals("Limonia"))
                 {
-                    return "Vorbidden planet";
+                    return "forbidden planet";
                 }
-                if (catalog.Counter > 3)
-                {
+                if (counter % 3 == 0)
                     return "Error";
-                }
-                else
-                {
-                    return null;
-                }
+                      return null;
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("the Earth", planetName =>
+            catalog.GetPlanet("venus", (planetName, counter) =>
             {
-                if (planetName == "Limonia")
+                if (planetName.Equals("Limonia"))
                 {
-                    return "Vorbidden planet";
+                    return "forbidden planet";
                 }
-                if (catalog.Counter > 3)
-                {
+                if (counter % 3 == 0)
                     return "Error";
-                }
-                else
-                {
                     return null;
-                }
             });
             Console.WriteLine("\n");
-            catalog.GetPlanet("mars", planetName =>
+            catalog.GetPlanet("Mars", (planetName, counter) =>
             {
-                if (planetName.ToLower() == "Limonia")
+                if (planetName.Equals("Limonia"))
                 {
-                    return "Vorbidden planet";
-
+                    return "forbidden planet";
                 }
-                if (catalog.Counter > 3)
-                {
+                if (counter % 3 == 0)
                     return "Error";
-                }
-                else
-                {
                     return null;
-                }
             });
         }
-
     }
 }

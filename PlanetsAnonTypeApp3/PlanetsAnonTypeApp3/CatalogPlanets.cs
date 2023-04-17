@@ -1,43 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Numerics;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Channels;
-using System.Threading.Tasks;
-
+﻿
 namespace PlanetsAnonTypeApp3
 {
-
+    public delegate string? PlanetValidator(string planetName,int counter);
     public class CatalogOfPlanets
     {
         private List<Planet> Planets { get; set; }
-        public int Counter { get; set; }
+        private int Counter { get; set; }
         public CatalogOfPlanets()
         {
             Planets = new List<Planet>
             {
                 new Planet ("Venus",2, 380.25),
-                new Planet ("The Earth", 3, 40.075),
-                new Planet ("Mars", 4, 21.3444)
+                new Planet ("The Earth", 3, 40.075, new Planet("Venus",2, 380.25)),
+                new Planet ("Mars", 4, 21.3444, new Planet ("The Earth", 3, 40.075))
             };
         }
-        public void GetPlanet(string planetName, Func<string, string> planetValidator)
+        public void GetPlanet(string planetName, PlanetValidator planetValidator)
         {
-            Counter++;
+           Counter++;  
             var planet = Planets.FirstOrDefault(p => p.Name.Equals(planetName, StringComparison.OrdinalIgnoreCase));
 
-            if (planetValidator(planetName) == "Vorbidden planet")
+            if (planetValidator(planetName,Counter) == "forbidden planet")
             {
-                Console.WriteLine("this is vorbidden planet");
+                Console.WriteLine("this is forbidden planet");
             }
-            else if (planetValidator(planetName) == "Error")
+            else if (planetValidator(planetName,Counter) == "Error")
             {
                 Console.WriteLine("You ask too often");
-                Environment.Exit(0);
             }
             else if (planet != null)
             {
