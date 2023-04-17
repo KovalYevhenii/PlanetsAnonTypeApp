@@ -27,6 +27,7 @@ namespace PlanetsAnonTypeApp3
             else if (planetValidator(planetName,Counter) == "Error")
             {
                 Console.WriteLine("You ask too often");
+                Counter = 0;
             }
             else if (planet != null)
             {

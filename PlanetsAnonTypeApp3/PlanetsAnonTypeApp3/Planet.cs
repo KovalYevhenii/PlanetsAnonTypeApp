@@ -12,7 +12,7 @@ namespace PlanetsAnonTypeApp3
             Name = name;
             OrderNumber = orderNumber;
             EquatorLength = equatorLength;
-           PreviousPlanet = previousPlanet;
+            PreviousPlanet = previousPlanet;
         }
     }
 }
